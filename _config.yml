@@ -1,0 +1,11 @@
+# GitHub Pages renders README.md through Jekyll.
+#
+# kramdown stops parsing Markdown as soon as it enters a raw HTML block, and
+# README.md wraps its language badge tables in <div align="center">. Without
+# the option below the whole guide after that div is published as raw text.
+kramdown:
+  parse_block_html: true
+  parse_span_html: true
+
+title: GitHub Achievements
+description: How to get every GitHub achievement, step by step.
